@@ -10,7 +10,8 @@ import com.gmail.vorononovskyi.yaroslav.isg.homework.first.service.impl.Electron
 public class App {
     public static void main(String[] args) {
         IElectronicGoodService electronicGoodService = new ElectronicGoodService();
-        electronicGoodService.addToBasket(new ElectronicGood[]{
+
+        ElectronicGood[] electronicGoodsArray = {
                 new SmartPhone(1, "IPhone 15", 1300, "silver", "China", 12345678),
                 new SmartPhone(2, "IPhone 15 Pro", 1500, "graphite", "China", 12345623),
                 new SmartPhone(3, "Samsung", 1300, "silver", "China", 123467),
@@ -23,6 +24,11 @@ public class App {
                 new TV(10, "LG", 1500, "graphite", "China", 12345623),
                 new TV(11, "Philips", 1300, "silver", "China", 123467),
                 new TV(12, "Samsung", 500, "graphite", "China", 1654609),
-        });
+        };
+
+        for (ElectronicGood item : electronicGoodsArray) {
+            System.out.println(item);
+        }
+        electronicGoodService.addToBasket(electronicGoodsArray);
     }
 }

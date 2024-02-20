@@ -7,13 +7,10 @@ public class SmartPhone extends ElectronicGood {
 
     @Override
     public String toString() {
-        return "SmartPhone{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", color='" + color + '\'' +
-                ", producingCountry='" + producingCountry + '\'' +
-                ", serialNumber=" + serialNumber +
-                '}';
+        return "SmartPhone [ " + name + '\'' +
+                ", price: " + price + "$" +
+                ", color: '" + color + '\'' +
+                ", producingCountry: '" + producingCountry + '\'' +
+                ", serialNumber: " + serialNumber + " ]";
     }
 }

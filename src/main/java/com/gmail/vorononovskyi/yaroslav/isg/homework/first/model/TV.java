@@ -7,13 +7,10 @@ public class TV extends ElectronicGood {
 
     @Override
     public String toString() {
-        return "TV{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", color='" + color + '\'' +
-                ", producingCountry='" + producingCountry + '\'' +
-                ", serialNumber=" + serialNumber +
-                '}';
+        return "TV [ " + name + '\'' +
+                ", price: " + price + "$" +
+                ", color: '" + color + '\'' +
+                ", producingCountry: '" + producingCountry + '\'' +
+                ", serialNumber: " + serialNumber + " ]";
     }
 }

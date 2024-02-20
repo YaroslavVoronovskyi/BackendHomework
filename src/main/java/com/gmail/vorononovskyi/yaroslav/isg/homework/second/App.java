@@ -45,11 +45,13 @@ public class App {
         corporateOrganization.add(new Manager(15, "Yaroslav", "Voronovskyi", "Fullstack",
                 500, 5, 30, "Lead"));
 
+        for (Employee employee : corporateOrganization) {
+            System.out.println(employee);
+        }
 
         for (Employee employee : corporateOrganization) {
-            System.out.println(employee.getFirstName() + " " + employee.getLastName()+  " " +  " " + employee.getSalary());
+            System.out.println(employee.getFirstName() + " " + employee.getLastName() + " "
+                    + " " + employee.getSalary() + "$");
         }
     }
-
-
 }

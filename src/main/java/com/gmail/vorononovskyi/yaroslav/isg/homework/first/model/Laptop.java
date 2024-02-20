@@ -7,13 +7,10 @@ public class Laptop extends ElectronicGood {
 
     @Override
     public String toString() {
-        return "Laptop{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", color='" + color + '\'' +
-                ", producingCountry='" + producingCountry + '\'' +
-                ", serialNumber=" + serialNumber +
-                '}';
+        return "Laptop [ " +  name + '\'' +
+                ", price: " + price + "$" +
+                ", color: '" + color + '\'' +
+                ", producingCountry: '" + producingCountry + '\'' +
+                ", serialNumber: " + serialNumber + " ]";
     }
 }
